@@ -1,6 +1,20 @@
-# unep_wcmc
+# GIS toolkit environment
 
-## Set up with docker-compose :whale:
+## What's in this environment
+
+The environment contains the following main features,
+
+- PostgreSQL 14
+
+- PostGIS 3
+
+- Python 3.10
+
+- Jupyter Lab
+
+- Python geospatial packages: GeoPandas, GeoPy, rasterio, PyDeck, ...
+
+## Set up with docker-compose :whale: :boom:
 
 >NOTE: to install this environment both [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/) are required
 

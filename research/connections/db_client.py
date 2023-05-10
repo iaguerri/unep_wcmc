@@ -116,3 +116,17 @@ class DBClient:
                     parse_dates=parse_dates
                 )
             )
+
+    def gdf_to_postgis(self, gdf):
+        """
+        Creates a PostGIS table from the gdf
+            """
+        gdf.to_postgis(
+            name=gdf.name,
+            con=self.engine,
+            schema='public',
+            if_exists='fail',
+            index=False,
+            index_label=None,
+        )
+        return f'Created table {gdf.name} in PostGIS'
